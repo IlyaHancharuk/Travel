@@ -42,14 +42,14 @@ body {
 header {
     position: relative;
     z-index: 2;
-    background-color: rgba(242, 120, 92, 0.7);
 }
 
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 90px;
+    padding: 0 120px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
@@ -64,9 +64,12 @@ header {
 div.logo {
     display: flex;
     align-items:center;
+    position: relative;
 }
 
 .nav {
+    position: relative;
+    right: 15px;
     height: 100%;
 }
 
@@ -79,13 +82,13 @@ ul.menu {
 }
 
 .menu-item {
-    height: 100%;
+    height: 50px;
 }
 
 .menu-item:hover {
-    background: rgba(13, 96, 111, 0.7);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    transform: scale(1.2, 1.2);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .menu-link {
@@ -97,7 +100,6 @@ ul.menu {
     font-family: 'RedHatText-Medium';
     font-size: 16px;
     line-height: 21px;
-    transition: 4s;
 }
 
 .btn {
@@ -112,6 +114,12 @@ ul.menu {
     width: 228px;
     height: 59px;
     font-family: 'RedHatText-Medium';
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(0.9, 0.9);
+    cursor: pointer;
 }
 
 .btn-login {
@@ -123,10 +131,11 @@ ul.menu {
 }
 
 h2, h3 {
-    font-family: 'RedHatText-Medium';
+    font-family: 'Red Hat Text';
+    font-weight: 500;
     font-size: 40px;
     line-height: 53px;
-    color: #F2785C;
+    color: #F2785C;;
 }
 
 section.preview .container {
@@ -148,11 +157,13 @@ h1 {
 }
 
 p.preview-text {
-    font-family: 'Aleo-Italic';
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 48px 0 46px 0;
+    margin: 32px 0 46px 0;
 }
 
 form.search {
@@ -168,14 +179,15 @@ form.search {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
     border: none;
-    padding: 32px 291px 41px 41px;
+    padding: 42px 291px 41px 41px;
 }
 
 input::placeholder {
-    font-family: 'Aleo-Italic';
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #F2785C;
 }
 
 .btn-search {
@@ -196,16 +208,33 @@ input::placeholder {
     text-align: center;
 }
 
+.step-item:first-child {
+    position: relative;
+    left: 12px;
+}
+
+.step-item:nth-child(2) {
+    position: relative;
+    left: 37px;
+}
+
+.step-item:last-child {
+    position: relative;
+    right: 10px;
+}
 
 figure p {
     text-align: center;
     }
 
 figcaption {
-    font-family: 'Aleo-Regular';
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
+    padding-top: 25px;
 }
 
 .destinations-title {
@@ -353,9 +382,10 @@ figcaption {
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 61px;
+    margin: 0 120px;
 }
 
 ul.social{
