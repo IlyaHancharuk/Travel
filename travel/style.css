@@ -32,11 +32,16 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
+}
+
+html, body {
+    font-size: 10px;
 }
 
 header {
@@ -56,7 +61,7 @@ header {
 
 .header-title {
     font-family: 'Magra-Bold';
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 39px;
     color: #FFFFFF;
 }
@@ -98,7 +103,7 @@ ul.menu {
     text-decoration: none;
     color: #fff;
     font-family: 'RedHatText-Medium';
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 21px;
 }
 
@@ -126,14 +131,14 @@ ul.menu {
     width: 103px;
     height: 41px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 21px;   
 }
 
 h2, h3 {
     font-family: 'Red Hat Text';
     font-weight: 500;
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 53px;
     color: #F2785C;;
 }
@@ -151,7 +156,7 @@ section.preview .container {
 
 h1 {
     font-family: 'Aleo-Bold';
-    font-size: 80px;
+    font-size: 8rem;
     line-height: 96px;
     color: #FFFFFF;
 }
@@ -160,7 +165,7 @@ p.preview-text {
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
     color: #FFFFFF;
     margin: 32px 0 46px 0;
@@ -186,14 +191,14 @@ input::placeholder {
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 29px;
 }
 
 .btn-search {
     position: absolute;
     left: 72.4%;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 32px;
 }
 
@@ -231,7 +236,7 @@ figcaption {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
     color: #0D606F;
     padding-top: 25px;
@@ -263,23 +268,21 @@ figcaption {
 }
 
 .usa-name {
-    position: absolute;
-    font-family: 'RedHatText-Medium';
-    font-size: 32px;
-    line-height: 42px;
-    color: #FFFFFF;
     left: 1195px;
     bottom: 40px;
 }
 
 .japan-name {
-    position: absolute;
-    font-family: 'RedHatText-Medium';
-    font-size: 32px;
-    line-height: 42px;
-    color: #FFFFFF;
     left: 335px;
     bottom: 40px;
+}
+
+.usa-name, .japan-name {
+    position: absolute;
+    font-family: 'RedHatText-Medium';
+    font-size: 3.2rem;
+    line-height: 42px;
+    color: #FFFFFF;
 }
 
 .swiper-container {
@@ -305,7 +308,7 @@ figcaption {
 }
 
 .btn-more {
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 32px;
     margin-bottom: 40px;
 }
@@ -360,14 +363,14 @@ figcaption {
 .story-text h3 {
     margin-bottom: 20px;
     font-family: 'Aleo-Regular';
-    font-size: 35px;
+    font-size: 3.5rem;
     line-height: 42px;
     color: #0D606F;
 }
 
 .story-text p {
     font-family: 'Aleo-Regular';
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
     color: #0D606F;
 }
@@ -375,7 +378,7 @@ figcaption {
 .text-read-more {
     font-family: 'Aleo-Bold';
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
     text-decoration: underline;
 }
@@ -403,7 +406,8 @@ ul.social{
 
 .footer-container p {
     font-family: 'RedHatText-Medium';
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 21px;
     color: #FFFFFF;
 }
+
