@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-       <div class="header-container">
+       <div class="header-container ">
             <div class="logo">
                 <img src="./assets/images/logo.svg" alt="icon">
                 <h3 class="header-title">Travel Portal</h3>
@@ -26,10 +26,19 @@
                     <li class="menu-item"> <a href="#steps" class="menu-link">Plan Your Trip</a> </li>
                     <li class="menu-item"> <a href="#destinations" class="menu-link">Destinations</a> </li>
                     <li class="menu-item"> <a href="#stories" class="menu-link">Travel Stories</a> </li>
+                    <li class="burger-item menu-item "> <a href="#" class="menu-link">Account</a> </li>
+                    <li class="burger-item menu-item"> <a href="#social" class="menu-link">Social Media</a> </li>
                 </ul>
             </nav>
+            
             <div class="login">
                 <button class="btn btn-login" type="button">Login</button>
+            </div>
+            <div class="burger-btn" id="burger-btn">
+                <img class="burger-icon" src="./assets/images/burger.svg" alt="burger-icon">
+            </div>
+            <div class="burger-closer" id="burger-btn">
+                <img class="burger-icon" src="./assets/images/burger_closer.svg" alt="burger-closer">
             </div>
         </div> 
     </header>
@@ -62,17 +71,30 @@
                         <figcaption>We will give you recommendations</figcaption>
                     </figure>
                 </div>
+                
             </div>
         </section>
         <section class="destinations" id="destinations">
-            <div class="container">
+            <div class="destinations-container container">
                 <h2 class="destinations-title">POPULAR DESTINATIONS</h2>
                 <div class="slider">
-                    <span class="usa-name">USA</span>
-                    <span class="japan-name">JAPAN</span>
-                    <img src="./assets/images/spain.jpg" alt="spain" height="800" width="800">
-                    <img src="./assets/images/usa.jpg" alt="usa" height="800" width="800">
-                    <img src="./assets/images/japan.jpg" alt="japan" height="800" width="800">
+                    
+                    
+                    <picture class="pic-slider">
+                        <span class="pic-name">SPAIN</span>
+                        <source srcset="./assets/images/spain360w.jpg" media="(max-width: 390px)">
+                        <img src="./assets/images/spain.jpg" alt="spain">
+                    </picture>
+                    <picture class="pic-slider">
+                        <span class="pic-name">JAPAN</span>
+                        <source srcset="./assets/images/japan360w.jpg" media="(max-width: 390px)">
+                        <img src="./assets/images/japan.jpg" alt="japan">
+                    </picture>
+                    <picture class="pic-slider">
+                        <span class="pic-name">USA</span>
+                        <source srcset="./assets/images/usa360w.jpg" media="(max-width: 390px)">
+                        <img src="./assets/images/usa.jpg" alt="usa">
+                    </picture>
                 </div>
                 <div class="swiper-container">
                     <span class="swiper-item"></span>
@@ -87,7 +109,7 @@
             <div class="background-container">
                 <div class="container stories-container">
                     <div class="story">
-                        <img class="story-img" src="./assets//images/thai.jpg" alt="thailand">
+                        <img class="story-img" src="./assets//images/thai.jpg" alt="thailand" height="250" width="400">
                         <div class="story-text">
                             <h3>10 Photos of Attractive Thailand</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -95,7 +117,7 @@
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story-img" src="./assets//images/canyon.jpg" alt="canyon-park">
+                        <img class="story-img" src="./assets//images/canyon.jpg" alt="canyon-park" height="250" width="400">
                         <div class="story-text">
                             <h3>Canyonlands National Park, Utah</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -103,7 +125,7 @@
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story-img" src="./assets//images/mount.jpg" alt="mountains">
+                        <img class="story-img" src="./assets//images/mount.jpg" alt="mountains" height="250" width="400">
                         <div class="story-text">
                             <h3>I left my heart in the Mountains!</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>    
@@ -111,7 +133,7 @@
                         </div>
                     </div>
                     <div class="story">
-                        <img class="story-img" src="./assets/images/bus.jpg" alt="bus">
+                        <img class="story-img" src="./assets/images/bus.jpg" alt="bus" height="250" width="400">
                         <div class="story-text">
                             <h3>The Longest journey in my life!</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>    
@@ -127,24 +149,24 @@
     <footer>
         <div class="footer-container">
             <div class="rsscool-link">
-                <a href="https://rs.school/js-stage0/"><img src="https://rs.school/images/rs_school_js.svg" alt="rss-icon" height="50" width="100"></a>
-                <a href="https://github.com/IlyaHancharuk"><img src="./assets/images/github.svg" alt="github-icon" height="40" width="40"></a>
+                <a href="https://rs.school/js-stage0/"><img class="rs-icon" src="https://rs.school/images/rs_school_js.svg" alt="rss-icon" height="50" width="100"></a>
+                <a href="https://github.com/IlyaHancharuk"><img class="git-icon" src="./assets/images/github.svg" alt="github-icon" height="40" width="40"></a>
             </div>
             <p>All Rights Reserved © Travel Portal</p>
-            <ul class="social">
+            <ul class="social" id="social">
                 <li>
                     <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md">
-                        <img src="./assets/images/instagram.svg" alt="inst-icon" height="34" width="34">
+                        <img class="soc-icon" src="./assets/images/instagram.svg" alt="inst-icon" height="34" width="34">
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md">
-                        <img src="./assets/images/youtube.svg" alt="youtube-icon" height="34" width="34">
+                        <img class="soc-icon" src="./assets/images/youtube.svg" alt="youtube-icon" height="34" width="34">
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md">
-                        <img src="./assets/images/twitter.svg" alt="twitter-icon" height="34" width="34">
+                        <img class="soc-icon" src="./assets/images/twitter.svg" alt="twitter-icon" height="34" width="34">
                     </a>
                 </li>
             </ul>
