@@ -1,3 +1,5 @@
+/* -----------------Burger menu------------------------------- */
+
 function burgerMenu () {
     let burger_btn = document.getElementById('burger_btn');
     let burger_menu = document.getElementById('burger_menu');
@@ -19,4 +21,19 @@ function toggleMenu () {
     burger_closer.classList.toggle('closer_active')
     burger_overlay.classList.toggle('burger_overlay_active')
     body.classList.toggle('no-scroll-page')
+}
+
+/* -------------------------Smoothing scroll-------------------------------- */
+
+let anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault()
+        let blockID = anchor.getAttribute('href')
+        document.querySelector(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
 }
