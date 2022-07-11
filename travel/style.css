@@ -115,7 +115,7 @@ ul.menu {
     height: 100%;
 }
 
-.burger-btn, .burger-closer {
+.burger_btn, .burger_closer {
     display: none
 }
 
@@ -684,7 +684,7 @@ ul.social{
     } 
  
 
-/* -------------------burger menu----------------- */
+/* -------------------------------------------------burger menu--------------------------------------------- */
     .burger_btn, .burger_closer {
         display: block;
         cursor: pointer;
@@ -754,7 +754,7 @@ ul.social{
         display: flex;
     }
     
-/* -----------------------End burger menu---------------- */
+/* --------------------------------------------End burger menu------------------------------------------------ */
 
 }
 
