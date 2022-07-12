@@ -84,7 +84,7 @@ div.logo {
     position: relative;
 }
 
-.burger_overlay {
+/* .burger_overlay {
     visibility: hidden;
     position: fixed;
     width: 100%;
@@ -97,7 +97,7 @@ div.logo {
 .burger_overlay_active {
     visibility: visible;
     background-color: rgba(0, 0, 0, 40%);
-}
+} */
 
 .nav {
     position: relative;
@@ -714,6 +714,21 @@ ul.social{
         right: 0;
     }
     
+    .burger_overlay {
+        visibility: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        transition: .5s;
+        z-index: 5;
+    }
+    
+    .burger_overlay_active {
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 40%);
+    }
+
     ul.menu {
         position: fixed;
         height: 251px;
