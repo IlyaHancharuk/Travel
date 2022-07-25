@@ -30,8 +30,6 @@ function toggleMenu (e) {
 
 let anchors = document.querySelectorAll('a[href*="#"]')
 
-
-
 for (let anchor of anchors) {
     anchor.addEventListener('click', function(event) {
         event.preventDefault()
@@ -49,4 +47,25 @@ for (let anchor of anchors) {
 }
 
 
+/* -----------------------------------------pop up---------------------------------------------- */
+
+let openModalBtn = document.querySelector('.btn-login')
+let openModalLink = document.getElementById('account')
+let modal = document.querySelector('.modal')
+let modal_body = document.querySelector('.modal-body')
+
+function openPopUp() { 
+    modal_body.style.top = '22.5%'
+    modal.style.display = 'flex'
+}
+
+openModalBtn.addEventListener('click', openPopUp)
+
+openModalLink.addEventListener('click', openPopUp)
+
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none'
+    }
+})
 
