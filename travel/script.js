@@ -63,7 +63,7 @@ let input_pass_reg = document.querySelector('.pass-reg')
 
 
 function openPopUp() { 
-    modal_body.style.top = '22.5%'
+    modal_body.style.top = '0'
     modal.style.display = 'flex'
     body.classList.toggle('no-scroll-page')
 }
