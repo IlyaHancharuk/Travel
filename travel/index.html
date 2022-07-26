@@ -189,14 +189,30 @@
                     <div class="modal-devide-line"></div>
                 </div>
                 <p>E-mail</p>
-                <input type="email">
+                <input class="email-login" type="email" required>
                 <p>Password</p>
-                <input type="password">
+                <input class="pass-login" type="password" name="psw" required>
                 <button class="modal-btn sign-in-site">Sign In</button>
-                <a href="#" class="modal-forgot-link">Forgot Your Password?</a>
+                <span class="pseudolink">Forgot Your Password?</span>
                 <div class="modal-devide-line"></div>
-                <p class="reg-link">Don't have an account?
-                    <a href="#">Register</a>
+                <p class="acc-text">Don't have an account?
+                    <span class="pseudolink reg-link">Register</span>
+                </p>
+            </form>
+        </div>
+
+
+        <div class="modal-wrapper-reg">
+            <form class="modal-body-reg">
+                <h2 class="modal-title">Create an account</h2>
+                <p>E-mail</p>
+                <input class="email-reg" type="email">
+                <p>Password</p>
+                <input class="pass-reg" type="password">
+                <button class="modal-btn sign-up-site">Sign Up</button>
+                <div class="modal-devide-line"></div>
+                <p class="acc-text">Already have an account?
+                    <span class="pseudolink login-link">Log in</span>
                 </p>
             </form>
         </div>
